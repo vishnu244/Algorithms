@@ -49,6 +49,10 @@ while (true)
             PrimeNumbers primeNumbers = new PrimeNumbers();
             primeNumbers.primeNumber();
             break;
+        case 4:
+            BubbleSorting b = new BubbleSorting();
+            b.BSort();
+            break;
     }
 }
 
