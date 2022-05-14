@@ -7,7 +7,7 @@ Console.WriteLine("Welcome to Algorithms practice problems!");
 
 while (true)
 {
-    Console.WriteLine("Please choose the option :\n1)Anagram\n2)Binary Search");
+    Console.WriteLine("Please choose the option :\n1)Anagram\n2)Binary Search\n3)Prime Numbers ini range");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -44,6 +44,10 @@ while (true)
                 Console.WriteLine("Element found at "
                                 + "index " + result);
             Console.WriteLine(result);
+            break;
+        case 3:
+            PrimeNumbers primeNumbers = new PrimeNumbers();
+            primeNumbers.primeNumber();
             break;
     }
 }
