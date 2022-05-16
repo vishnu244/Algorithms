@@ -7,7 +7,7 @@ Console.WriteLine("Welcome to Algorithms practice problems!");
 
 while (true)
 {
-    Console.WriteLine("Please choose the option :\n1)Anagram\n2)Binary Search\n3)Prime Numbers ini range\n4)Bubble Sorting\n5)Insertion Sorting");
+    Console.WriteLine("Please choose the option :\n1)Anagram\n2)Binary Search\n3)Prime Numbers ini range\n4)Bubble Sorting\n5)Insertion Sorting\n6)Merge Sorting");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
