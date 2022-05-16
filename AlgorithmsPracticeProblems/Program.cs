@@ -7,7 +7,7 @@ Console.WriteLine("Welcome to Algorithms practice problems!");
 
 while (true)
 {
-    Console.WriteLine("Please choose the option :\n1)Anagram\n2)Binary Search\n3)Prime Numbers ini range\n4)Bubble Sorting\n5)Insertion Sorting\n6)Merge Sorting\n7)Guess the Number");
+    Console.WriteLine("Please choose the option :\n1)Anagram\n2)Binary Search\n3)Prime Numbers ini range\n4)Bubble Sorting\n5)Insertion Sorting\n6)Merge Sorting\n7)Guess the Number\n8)BinarySearch using Generics");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -78,6 +78,24 @@ while (true)
         case 7:
             GuesstheNumber guesstheNumber = new GuesstheNumber();
             guesstheNumber.Guess();
+            break;
+        case 8:
+
+            BinarySearchUsingGenerics<int> bs1 = new();
+            int[] arr1 = { 11,22,33,44,55,66};
+            foreach (int s in arr1)
+            {
+                Console.WriteLine(s);
+            }
+            Array.Sort(arr1);
+            Console.WriteLine("Please enter the Number to be searched :");
+            int key1 = Convert.ToInt32(Console.ReadLine());
+            int result1 = bs1.binary_search_iterative(arr1, key1);
+            if (result1 == -1)
+                Console.WriteLine("Element not present");
+            else
+                Console.WriteLine("Element found at index " + result1); 
+            
             break;
 
     }

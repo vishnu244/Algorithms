@@ -20,7 +20,6 @@ namespace AlgorithmsPracticeProblems
                 Console.WriteLine("Enter 1 if number is between {0} and {1}", low, mid);
                 Console.WriteLine("Enter 2 if number is between {0} and {1}", (mid + 1), high);
                 int option = Convert.ToInt32(Console.ReadLine());
-                mid = (low + high) / 2;
                 if (option == 1)
                 {
                     high = mid;
